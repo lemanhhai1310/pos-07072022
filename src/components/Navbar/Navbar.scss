@@ -1,0 +1,46 @@
+.navbar{
+  display: flex;
+  position: relative;
+  background: #0544B8;
+  padding: 0 30px;
+  &__container{
+
+  }
+  &__left{
+    @extend .navbar__common;
+  }
+  &__right{
+    @extend .navbar__common;
+    margin-left: auto;
+  }
+  &__common{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  &__item{
+    min-height: 68px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__droprender{
+    padding: 0;
+    .ant-select-item{
+      padding: 8px 24px;
+    }
+    &__name{
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 19px;
+      color: #222222;
+      margin: 0;
+    }
+    &__price{
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 19px;
+      color: #0544B8;
+    }
+  }
+}
